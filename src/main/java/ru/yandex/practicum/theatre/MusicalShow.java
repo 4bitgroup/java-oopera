@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package main.java.ru.yandex.practicum.theatre;
 
 public class MusicalShow extends Show {
     protected Person musicAuthor;
@@ -12,16 +12,6 @@ public class MusicalShow extends Show {
 
     public void printLibretto() {
         System.out.println("Либретто: " + librettoText);
-    }
-
-    @Override
-    public void printListActors() {
-        System.out.println("Спектакль: " + title);
-        printLibretto();
-        System.out.println("Список актеров:");
-        for (Actor actor: listOfActors) {
-            System.out.println(actor);
-        }
     }
 
     public String getLibrettoText() {

@@ -1,3 +1,5 @@
+package main.java.ru.yandex.practicum.theatre;
+
 import java.util.Objects;
 
 public class Actor extends Person {

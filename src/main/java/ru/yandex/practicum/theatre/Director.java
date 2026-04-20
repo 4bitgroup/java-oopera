@@ -1,3 +1,5 @@
+package main.java.ru.yandex.practicum.theatre;
+
 public class Director extends Person {
     private int numberOfShows;
 

@@ -1,3 +1,5 @@
+package main.java.ru.yandex.practicum.theatre;
+
 public class Theatre {
     public static void main(String[] args) {
         Actor firstActor = new Actor("Виктор", "Андреев", Gender.MALE, 167);

@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package main.java.ru.yandex.practicum.theatre;
 
 public class Opera extends MusicalShow {
     private int choirSize;

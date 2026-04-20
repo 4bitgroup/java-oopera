@@ -1,4 +1,5 @@
-import javax.sound.midi.Soundbank;
+package main.java.ru.yandex.practicum.theatre;
+
 import java.util.ArrayList;
 
 public class Show {
@@ -32,14 +33,22 @@ public class Show {
     }
 
     public void replaceActor(Actor actor, String currentActorSurname) {
+        int countActorsForReplace = 0;
+        Actor actorList = null;
         for (Actor a: listOfActors) {
             if (a.getSurname().equals(currentActorSurname)) {
-                listOfActors.remove(a);
-                listOfActors.add(actor);
-                System.out.println("Актер заменен на: " + actor);
-                return;
+                actorList = a;
+                countActorsForReplace++;
             }
         }
-        System.out.println("Актер не найден!");
+        if (countActorsForReplace == 0) {
+            System.out.println("Актер не найден!");
+        } else if (countActorsForReplace > 1) {
+            System.out.println("Найдено более одного актера с такой фамилией");
+        } else {
+            listOfActors.remove(actorList);
+            listOfActors.add(actor);
+            System.out.println("Актер заменен на: " + actor);
+        }
     }
 }
